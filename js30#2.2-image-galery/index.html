@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unsplash</title>
+    <link rel="icon" href="media/icon/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__wrapper">
+            <div class="header__logo">
+                <img class="header__logo-png" src="media/icon/camera.png" id="logo"></img>
+                <div class="header__logo-text" id="logoText"> Unsplash API </div>
+            </div>
+            <form class="header__search" id="searchForm">
+                <button type="submit" class="header__search-icon icon__search" id="searchBtn"></button>
+                <input class="header__search-input" id="search" name="search" type="search" autocomplete="off"
+                    placeholder="Search...">
+            </form>
+        </div>
+    </header>
+    <main>
+        <section class="section">
+            <div class="container section__wrapper">
+                <aside class="aside" id="aside">
+                    <div class="aside__item" id="nature">Nature</div>
+                    <div class="aside__item" id="animals">Animals</div>
+                    <div class="aside__item" id="sea">Sea</div>
+                    <div class="aside__item" id="people">People</div>
+                    <div class="aside__item" id="business">Business</div>
+                    <div class="aside__item" id="sport">Sport</div>
+                    <div class="aside__item" id="food">Food</div>
+                </aside>
+                <div class="gallery" id="gallery"></div>
+                <div class="pagination"></div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__wrapper">
+            <div class="footer__info">
+                <span class="footer__info-symbol">&#169;</span>
+                <span class="footer__info-year">2023</span>
+                <a class="footer__info-git" href="https://github.com/Anzhelika007" target="_blank">gitHub</a>
+            </div>
+            <div class="footer__logo-school">
+                <a href="https://rs.school/js-stage0/" target="_blank">
+                    <svg class="footer__logo-svg">
+                        <use class="footer__logo-svg-svg" href="media/icon/sprite.svg#rss"></use>
+                    </svg>
+                </a>
+            </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
