@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>audio-player</title>
+    <link rel="icon" href="media/svg/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        <audio src="media/audio/beyonce.mp3" autoplay></audio>
+        <img class="img_bg" src="media/img/lemonade.png" alt="song picture" id="backgroundPage">
+        <div class="player__wrapper">
+            <div class="player__img-wrapper">
+                <img class="player__img" src="media/img/lemonade.png" alt="song picture" id="playerImg">
+            </div>
+            <div class="player__info">
+                <button class="player__play-btn" id="playBtn" pause></button>
+                <div class="player__song">
+                    <span class="plaayer__song-author" id="songAuthor">Beyonce</span>
+                    <span class="plaayer__song-song" id="song">Don't Hurt Yourself</span>
+                </div>
+                <div class="player__btn">
+                    <button class="player__prev-btn" id="nextBtn"></button>
+                    <button class="player__next-btn" id="prevBtn"></button>
+                </div>
+                <!-- <div class="player__progress"> -->
+                <input class="player__progress-line " type="range" name="progressBar" id="progressBar" min="0" max="100"
+                    value="0" onchange="">
+                <!-- </div> -->
+                <label for="progressBar" class="player__long-song" id="timeSong">3:23</label>
+                <label for="progressBar" class="player__play-song" id="timePlay">0:00</label>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__info">
+                <span class="footer__info-symbol">&#169;</span>
+                <span class="footer__info-year">2023</span>
+                <a class="footer__info-git" href="https://github.com/Anzhelika007" target="_blank">gitHub</a>
+            </div>
+            <div class="footer__logo-school">
+                <a href="https://rs.school/js-stage0/" target="_blank">
+                    <svg class="footer__logo-svg">
+                        <use class="footer__logo-svg-svg" href="media/svg/sprite.svg#rss"></use>
+                    </svg>
+                </a>
+            </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
