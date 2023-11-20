@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eco-sounds</title>
+    <link rel="icon" href="media/svg/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Secular+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__wrapper">
+            <svg class="logo__svg">
+                <use class="logo__svg-svg" href="./media/svg/sprite.svg#logo" id="forest"></use>
+            </svg>
+            <div class="navigation">
+                <ul class="navigation__wrapper">
+                    <li class="navigation__item" id="solovey">Соловей</li>
+                    <li class="navigation__item" id="drozd">Дрозд</li>
+                    <li class="navigation__item" id="malinovka">Малиновка</li>
+                    <li class="navigation__item" id="zhavoronok">Жаворонок</li>
+                    <li class="navigation__item" id="slavka">Славка</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="layout">
+            <div class="container">
+                <button class="layout__btn" id="btn"></button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__wrapper">
+            <div class="footer__info">
+                <span class="footer__info-symbol">&#169;</span>
+                <span class="footer__info-year">2023</span>
+                <a class="footer__info-git" href="https://github.com/Anzhelika007" target="_blank">gitHub</a>
+            </div>
+            <div class="footer__logo-school">
+                <a href="https://rs.school/js-stage0/" target="_blank">
+                    <svg class="footer__logo-svg">
+                        <use class="footer__logo-svg-svg" href="./media/svg/sprite.svg#rss"></use>
+                    </svg>
+                </a>
+            </div>
+    </footer>
+    <audio src="media/audio/forest.mp3"></audio>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

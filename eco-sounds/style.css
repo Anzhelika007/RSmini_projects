@@ -1,0 +1,162 @@
+:root {
+    --black-color: #000000;
+    --white-color: #FFFFFF;
+    --gold-color: #BAAD82;
+    --brown-color: #A1946E;
+    --width-desctop: 1920px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 2rem;
+    color: var(--white-color);
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    background: var(--black-color);
+}
+
+.container {
+    max-width: 1440px;
+    height: 60px;
+    padding: 0.5rem 2rem;
+    margin: auto;
+}
+
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.logo__svg {
+    width: 50px;
+    height: 50px;
+    fill: var(--white-color);
+    cursor: pointer;
+}
+
+.logo__svg-svg {
+    width: 50px;
+    height: 50px;
+    fill: var(--gold-color);
+}
+
+.logo__svg-svg:hover {
+    fill: var(--white-color);
+}
+
+.navigation {}
+
+.navigation__wrapper {
+    display: flex;
+
+    align-items: center;
+    height: 100%;
+    list-style: none;
+}
+
+.navigation__item {
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.navigation__item:last-child {
+    padding-right: 0px;
+}
+
+.navigation__item:hover {
+    color: var(--gold-color);
+}
+
+.layout {
+    position: relative;
+    height: calc(100vh - 120px);
+    background-image: url(/media/img/forest.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.layout__btn {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 160px;
+    height: 160px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    background-image: url(/media/svg/play.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pause {
+    background-image: url(/media/svg/pause.svg);
+}
+
+.layout__btn:hover {
+    filter: brightness(.85);
+}
+
+
+
+.footer {}
+
+.footer__wrapper {
+    max-height: 60px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.footer__info {
+    padding: 10px 0;
+    display: flex;
+    gap: 20px;
+}
+
+.footer__info-symbol {}
+
+.footer__info-year {}
+
+.footer__info-git {
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer__info-git:hover {
+    color: var(--gold-color);
+}
+
+.footer__logo-school {
+    position: relative;
+    width: 150px;
+}
+
+.footer__logo-svg {
+    position: absolute;
+    top: -5px;
+    right: 0px;
+    height: 50px;
+    width: 150px;
+    fill: var(--white-color);
+}
+
+.footer__logo-svg:hover {
+    fill: var(--gold-color);
+}
