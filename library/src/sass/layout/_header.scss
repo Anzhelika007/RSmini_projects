@@ -1,0 +1,42 @@
+.header {
+
+    &__title {
+        display: inline-block;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        background-color: $black-l;
+        width: 100%;
+        position: relative;
+    }
+
+    &__box {
+        display: flex;
+        gap: 40px;
+        overflow: hidden;
+
+        &-link {
+            display: inline-block;
+            padding: 11px 0 6px;
+            border-radius: 50%;
+            z-index: 2;
+        }
+
+        &-profile {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            fill: $white;
+
+            &:hover {
+                //box-shadow: 0px 7px 12px 0px rgba(246, 248, 248, 0.7);
+                fill: $gold;
+                //scale: 1.1;
+                transition: all .3s;
+            }
+        }
+    }
+}

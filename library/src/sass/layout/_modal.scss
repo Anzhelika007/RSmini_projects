@@ -1,0 +1,99 @@
+.modal>*form>input[type='text'],
+.modal>*form>input[type='email'],
+.modal>*form>input[type='password'] {
+    width: 200px;
+    height: 20px;
+    border: 1px solid $gold;
+    border-radius: 0%;
+    font-size: 15px;
+    padding: 3px 5px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    transition: .3s;
+    opacity: 1;
+    z-index: 2;
+}
+
+.modal {
+    &__wrapper {
+        width: 250px;
+        box-sizing: border-box;
+        background-color: $white;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        transition: all 5s;
+    }
+
+    &__form {
+        padding: 20px 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__close-btn {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: 15px;
+        height: 15px;
+        cursor: pointer;
+    }
+
+    &__title {
+        @extend %font-primary;
+        @include font($size: 2.0rem);
+        color: $black;
+        letter-spacing: 0.4px;
+        text-transform: uppercase;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    &__label {
+        line-height: 2rem;
+        letter-spacing: 0.3px;
+    }
+
+    &__btn {
+        @include button($width: 75px, $height: 30px, $color: $black-l);
+        @include button-hover;
+        margin-top: 10px;
+    }
+
+    &__text {
+        height: 10px;
+        margin-top: -5px;
+        margin-bottom: 5px;
+    }
+
+    &-text {
+        font-size: 10px;
+    }
+
+    &-link {
+        font-size: 10px;
+        height: 8px;
+        font-weight: 700;
+        letter-spacing: 0.3px;
+        margin-left: 10px;
+        letter-spacing: 1px;
+        border-bottom: 1px solid $black;
+        cursor: pointer;
+    }
+
+}
+
+.none {
+    display: none;
+}

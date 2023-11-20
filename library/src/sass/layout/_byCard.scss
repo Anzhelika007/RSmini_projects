@@ -1,0 +1,96 @@
+.byCard {
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        width: 640px;
+        box-shadow: 0px 0px 5px #fff;
+        row-gap: 30px;
+        justify-content: space-between;
+        padding-bottom: 40px;
+    }
+
+    &__title {
+        line-height: 2rem;
+        color: $white;
+        letter-spacing: 2px;
+        text-transform: capitalize;
+        min-width: 640px;
+        text-align: center;
+        padding: 20px 0;
+        background-color: $black-l;
+        flex-basis: 100%;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+    }
+
+    &__close-btn {
+        top: 25px;
+        right: 20px;
+        width: 17px;
+        height: 17px;
+        cursor: pointer;
+    }
+
+    &__form {
+        width: 200px;
+        margin-left: 35px;
+    }
+
+    &__form-form {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    &__label {
+        line-height: 20px;
+        letter-spacing: 0.3px;
+        color: $black;
+        width: 200px;
+    }
+
+    &__submit {
+        display: flex;
+        height: 30px;
+        margin-top: 10px;
+    }
+
+    &__submit-price {
+        @extend %font-base;
+        @include font($size: 2.0rem, $height: 2.0rem, $weight: 700);
+        color: $black-l;
+        letter-spacing: 2px;
+        padding-left: 25px;
+        align-self: end;
+    }
+
+    &__submit-btn {
+        @include button($width: 75px, $height: 30px, $color: $black-l);
+        @include button-hover;
+        align-items: top;
+    }
+
+    &__text {
+        max-width: 330px;
+        margin-right: 35px;
+        color: $grey;
+        letter-spacing: 2px;
+        line-height: 20px;
+    }
+}
+
+input[name="byExpirationCode"],
+input[name="byCardCVC"] {
+    max-width: 45px;
+}
+
+label[for="byCardCardholderName"] {
+    padding-top: 10px;
+}
+
+.byCard__submit-btn[disabled],
+.byCard__submit-btn[disabled]:hover {
+    background-color: inherit;
+    border: 1px solid rgba(16, 16, 16, 0.3);
+    color: rgba(16, 16, 16, 0.3), ;
+}

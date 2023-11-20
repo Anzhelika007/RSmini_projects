@@ -1,0 +1,14 @@
+.container {
+    max-width: $width-content;
+    padding: 20px 20px 40px;
+    margin: auto;
+}
+
+.layout-2-column {
+    @include columns($width: 590px, $direction: row, $gap: auto);
+    flex-wrap: wrap;
+
+    @media (max-width: 1230px) {
+        justify-content: center;
+    }
+}

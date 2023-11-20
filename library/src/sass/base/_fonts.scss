@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Forum';
+    src: url('../fonts/forum/Forum.eot');
+    src: url('../fonts/forum/Forum.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/forum/Forum.woff2') format('woff2'),
+        url('../fonts/forum/Forum.woff') format('woff'),
+        url('../fonts/forum/Forum.svg#Forum') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2074;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter/InterBold.eot');
+    src: url('../fonts/Inter/InterBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Inter/InterBold.woff2') format('woff2'),
+        url('../fonts/Inter/InterBold.woff') format('woff'),
+        url('../fonts/Inter/InterBold.svg#Inter Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2074;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter/InterRegular.eot');
+    src: url('../fonts/Inter/InterRegular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Inter/InterRegular.woff2') format('woff2'),
+        url('../fonts/Inter/InterRegular.woff') format('woff'),
+        url('../fonts/Inter/InterRegular.svg#Inter') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2074;
+}

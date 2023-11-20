@@ -1,0 +1,173 @@
+.personalArea {
+
+    &__wrapper {
+        width: 600px;
+        height: 401px;
+        display: flex;
+        position: fixed;
+        box-shadow: 0px 0px 5px #fff;
+        //border: 1px solid $white;
+    }
+
+    &__name {
+        width: 170px;
+        height: 100%;
+        background-color: $black-l;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__name-avatar {
+        @extend %font-base;
+        @include font($size: 2.0rem, $height: 4.0rem);
+        color: $gold;
+        text-transform: uppercase;
+        width: 80px;
+        line-height: 80px;
+        background-color: $white;
+        text-align: center;
+    }
+
+    &__name-name {
+        @extend %font-base;
+        @include font($size: 2.0rem, $height: 4.0rem);
+        color: $black;
+        text-transform: capitalize;
+        width: 120px;
+        line-height: 30px;
+        background-color: $white;
+        text-align: center;
+    }
+
+    &__close-btn {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        width: 15px;
+        height: 15px;
+    }
+
+    &__info {
+        padding: 28px 20px 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__close-btn {}
+
+    &__info-title {
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+        padding-bottom: 10px;
+    }
+
+    &__info-info {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__info-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+
+    }
+
+    &__info-text {
+        line-height: 20px;
+        letter-spacing: 0.4px;
+        text-transform: capitalize;
+    }
+
+    &__info-icon {
+        width: 20px;
+        height: 21px;
+    }
+
+    &__info-count {
+        font-size: 10px;
+        line-height: 20px;
+    }
+
+    &__info__books {
+        font-size: 25px;
+        line-height: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__info__boks-book {
+        @extend %font-base;
+        @include font($size: 2.0rem);
+        color: $black;
+        letter-spacing: 2px;
+        position: relative;
+    }
+
+    &__info__books-title {
+        font-size: 25px;
+        line-height: 20px;
+    }
+
+    &__info__books-wrapper {
+        width: 370px;
+        height: 74px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        overflow-x: scroll;
+        overflow-y: scroll;
+
+        // &::-webkit-scrollbar {
+        //     width: 10px;
+        //     height: 10px;
+        // }
+
+        &>* {
+            list-style: none;
+            padding-left: 30px;
+            white-space: nowrap;
+        }
+
+        &>*::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            display: block;
+            width: 5px;
+            height: 5px;
+            background-color: $black;
+            border-radius: 50%;
+        }
+    }
+
+
+    &__info__card {
+        display: flex;
+        gap: 15px;
+        position: relative;
+        top: -14px;
+    }
+
+    &__info__card-text {}
+
+    &__info__card-number {
+        color: $gold;
+    }
+
+    &__info__card-icon {
+        position: absolute;
+        top: 50%;
+        right: 90px;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+}

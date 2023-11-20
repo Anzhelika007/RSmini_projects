@@ -1,0 +1,25 @@
+%font-base {
+    font-family: 'Inter', Verdana, sans-serif;
+}
+
+%font-primary {
+    font-family: 'Forum', Verdana, sans-serif;
+}
+
+%title-line {
+    position: relative;
+    padding-bottom: 22px;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 61px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50px;
+        height: 1px;
+        background-color: $black-l;
+    }
+
+}

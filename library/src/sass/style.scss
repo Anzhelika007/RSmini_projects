@@ -1,0 +1,32 @@
+@import 'base/normolize';
+
+// abstracts
+@import 'abstracts/variables';
+@import 'abstracts/placeholders';
+@import 'abstracts/mixins';
+
+// base
+@import 'base/fonts';
+@import 'base/body';
+
+// components
+@import 'components/buttons';
+
+// layout
+@import 'layout/container';
+@import 'layout/header';
+@import 'layout/navigation';
+@import 'layout/profile';
+@import 'layout/slider';
+@import 'layout/forms';
+@import 'layout/modal';
+@import 'layout/personalArea';
+@import 'layout/message';
+@import 'layout/libraryCard';
+@import 'layout/byCard';
+@import 'layout/footer';
+
+//pages
+@import 'pages/home';
+//themes
+//vendors

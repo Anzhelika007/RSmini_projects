@@ -1,0 +1,45 @@
+@mixin font($size, $height: $size, $weight: 400, $style: normal) {
+    font-size: $size;
+    font-style: $style;
+    font-weight: $weight;
+    line-height: $height;
+}
+
+@mixin button($width: 75px, $height: 30px, $color: $black-l) {
+    @extend %font-base;
+    @include font($size: 1.8rem, $weight: 700);
+    font-weight: 700;
+    display: inline-block;
+    width: $width;
+    height: $height;
+    border-radius: 2px;
+    border: 1px solid $color;
+    background-color: transparent;
+
+}
+
+
+
+@mixin columns($width, $direction: column, $gap: 40px) {
+    display: flex;
+    flex-direction: $direction;
+    gap: $gap;
+    justify-content: space-between;
+
+    &>* {
+        flex-basis: $width;
+    }
+}
+
+@mixin columns1() {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+@mixin section-wrapper($direction: column, $gap: 40px) {
+    display: flex;
+    flex-direction: $direction;
+    gap: $gap;
+    text-align: center;
+}
