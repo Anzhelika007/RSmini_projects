@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tic tac toe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Sigmar&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="media/svg/android-chrome-512x512.png">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__wrapper">
+            <img class="header__logo" src="media/svg/logo.png" alt="logo">
+            <div class="header__count">
+                <div class="header__count-text">move</div>
+                <div class="header__count-player">X</div>
+                <div class="header__count-block">
+                    <span class="header__count-block-number" id="stepX">0</span>
+                </div>
+                <div class="header__count-block-delimiter">:</div>
+                <div class="header__count-player">O</div>
+                <div class="header__count-block">
+                    <span class="header__count-block-number" id="stepO">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="area">
+            <div class="container area__wrapper" id="fildPlay">
+                <div class="area__item"></div>
+                <div class="area__item"></div>
+                <div class="area__item"></div>
+                <div class="area__item"></div>
+                <div class="area__item"></div>
+                <div class="area__item"></div>
+                <div class="area__item"></div>
+                <div class="area__item"></div>
+                <div class="area__item"></div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__wrapper">
+            <div class="footer__info">
+                <span class="footer__info-symbol">&#169;</span>
+                <span class="footer__info-year">2023</span>
+                <a class="footer__info-git" href="https://github.com/Anzhelika007" target="_blank">gitHub</a>
+            </div>
+            <div class="footer__logo-school">
+                <a class="footer__logo-school-link" href="https://rs.school/js-stage0/" target="_blank">
+                    <svg class="footer__logo-svg">
+                        <use class="footer__logo-svg-svg" href="./media/svg/sprite.svg#rs"></use>
+                    </svg>
+                </a>
+            </div>
+    </footer>
+    <div class="start modal none" id="start">
+        <div class="overlay" id="overlayStart"></div>
+        <div class="start__wrapper modal__wrapper">
+            <div class="start__title">Let's play!</div>
+            <div class="start__button">
+                <button class="start__button-btn" id="X">X</button>
+                <button class="start__button-btn" id="O">0</button>
+            </div>
+        </div>
+    </div>
+    <div class="winner modal none" id="winner">
+        <div class="overlay" id="overlayWinner"></div>
+        <div class="winner__wrapper modal__wrapper">
+            <div class="winner__title" id="winnerText"></div>
+            <div class="winner__text" id="winnerCount"></div>
+        </div>
+    </div>
+    <div class="result modal none" id="resultTable">
+        <div class="overlay" id="overlayResultTable"></div>
+        <div class="result__wrapper modal__wrapper" id="tableLines">
+            <div class="result__title">Result</div>
+            <div class="result__item-title">
+                <div class="result__num-title">№</div>
+                <div class="result__winner-title">Winner</div>
+                <div class="result__move-title">move</div>
+            </div>
+        </div>
+    </div>
+    <audio src="media/audio/start.mp3" autoplay></audio>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
