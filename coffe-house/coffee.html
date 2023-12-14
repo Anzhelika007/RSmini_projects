@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffe House</title>
+    <link rel="shortcut icon" href="src/img/icons/coffee.svg" type="image/x-icon">
+    <link rel="stylesheet" href="src/sass/style.css" type="text/css" >
+</head>
+<body>
+    <header class="header__home" id="home">
+        <div class="container">
+            <div class="header__home-block">
+                <div class="header__home-logo">
+                    <a href="index.html" class="header__home__block-link">
+                        <svg class="header__home__block-logo-svg">
+                            <use href="src/img/icons/sprite.svg#logo"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="header__home-menu menu">
+                    <div class="menu__icon">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <nav class="navigation">
+                        <ul class="navigation__list">
+                            <li class="navigation__list-item"><a href="index.html#favoriteCoffee" class="navigation__list-link">Favorite coffee</a></li>
+                            <li class="navigation__list-item"><a href="index.html#about" class="navigation__list-link">About</a></li>
+                            <li class="navigation__list-item"><a href="index.html#mobailApp" class="navigation__list-link">Mobile app</a></li>
+                            <li class="navigation__list-item"><a href="#contactMenu" class="navigation__list-link">Contact us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__home-icon menu__page">
+                    <a href="#" class="header__home-cup menu__page-link">Menu
+                        <svg class="header__home-cup-svg">
+                            <use href="src/img/icons/sprite.svg#coffee-cup"></use>
+                        </svg>
+                    </a>      
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="menu__coffee">
+            <div class="container">
+                <div class="menu__coffee-wrapper">
+                    <h1 class="menu__coffee-title">Behind each of our cups hides an <em>amazing surprise</em></h1>
+                    <div class="menu__coffee__block">
+                        <div class="menu__coffee__block-btn active__tag" id="coffee">Coffee</div>
+                        <div class="menu__coffee__block-btn" id="tea">Tea</div>
+                        <div class="menu__coffee__block-btn" id="dessert">Dessert</div>
+                    </div>
+                    <div class="menu__coffee__gallery gallery"></div>
+                    <svg class="menu__coffee__gallery-refresh none">
+                        <use href="src/img/icons/sprite.svg#button-icon-refresh"></use>
+                    </svg>    
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer__home" id="contactMenu">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__item">
+                    <h2 class="footer__item-title">Sip, Savor, Smile. <em>It’s coffee time!</em></h2>
+                    <div class="footer__item__social">
+                        <a href="https://twitter.com/" class="footer__item__social-link" target="_blank"></a>  
+                        <a href="https://www.instagram.com/" class="footer__item__social-link" target="_blank"></a>  
+                        <a href="https://www.facebook.com/" class="footer__item__social-link" target="_blank"></a>  
+                    </div>
+                </div>
+                <div class="footer__item">
+                    <h3 class="footer__item-contacts-title">Contact us</h3>
+                    <div class="footer__item-contacts">
+                        <a class="footer__item-contacts-link" href="https://maps.app.goo.gl/8ouNoPXa5QAEbtND6" target="_blank">
+                            <svg class="footer__item-contacts-svg">
+                                <use href="src/img/icons/sprite.svg#pin-alt"></use>
+                            </svg>8558 Green Rd.,  LA</a>
+                        <a class="footer__item-contacts-link" href="tel:+16035550123">
+                            <svg class="footer__item-contacts-svg">
+                                <use href="src/img/icons/sprite.svg#phone"></use>
+                            </svg>+1 (603) 555-0123</a>
+                        <a  class="footer__item-contacts-link" href="#">
+                            <svg class="footer__item-contacts-svg">
+                                <use href="src/img/icons/sprite.svg#clock"></use>
+                            </svg>Mon-Sat: 9:00 AM – 23:00 PM</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- <div class="modal__product modal" id="modalProduct">
+        <div class="overlay" id="overlay"></div>
+        <div class="modal__product__wrapper">
+            <div class="modal__product__img">
+                <img class="modal__product__img-img" src="src/img/products/coffee/coffee-1.jpg" alt="coffe">
+            </div>
+            <div class="form__wrapper">
+                <form action="#" class="form__product" id="formProduct">
+                    <div class="form__product-prev">
+                        <h3 class="form__product-title">Irish coffee</h3>
+                        <p class="form__product-description">Fragrant black coffee with Jameson Irish whiskey and whipped milk</p>
+                    </div>
+                    <div class="form__product__size ">
+                        <legend class="form__product__size-title">Size</legend>
+                        <div class="input__radio active__input">
+                          <input class="custom-radio" type="radio" id="sizeS" name="drone" value="s" checked>
+                          <label for="sizeS"><b>S</b> 200 ml</label>
+                        </div>
+                        <div class="input__radio">
+                          <input class="custom-radio" type="radio" id="sizeM" name="drone" value="m">
+                          <label for="sizeM"><b>M</b> 300 ml</label>
+                        </div>
+                        <div class="input__radio">
+                          <input class="custom-radio" type="radio" id="sizeL" name="drone" value="l">
+                          <label for="sizeL"><b>L</b> 400 ml</label>
+                        </div>
+                    </div>
+                    <div class="form__product__options">
+                        <legend class="form__product__options-title">Additives</legend>
+                        <div class="input__checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="scales" name="scales" checked >
+                            <label for="scales"><b>1</b> Sugar</label>
+                        </div>
+                        <div class="input__checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="horns" name="horns">
+                            <label for="horns"><b>2</b> Cinnamon</label>
+                        </div>
+                        <div class="input__checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="horns" name="horns">
+                            <label for="horns"><b>3</b> Syrup</label>
+                        </div>
+                    </div>
+                    <div class="form__product__price">
+                        <h3 class="form__product__price-title">Total:</h3>
+                        <h3 class="form__product__price-price">$7.00</h3>
+                    </div>
+                    <div class="form__product__warning">
+                        The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.
+                    </div>
+                    <input class="form__product__submit" type="submit" value="close" id="closeModal">
+                </form>
+            </div>
+        </div>
+    </div> -->
+    <script src="src/js/burger.js"></script>
+    <script src="src/js/products.js"></script>
+</body>
+</html>

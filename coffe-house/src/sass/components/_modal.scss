@@ -1,0 +1,206 @@
+.custom-radio,
+.custom-checkbox{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.custom-radio+label, 
+.custom-checkbox+label{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    user-select: none;
+    color: $brown-dark;
+    font-weight: 600;
+    cursor: pointer;
+}
+label > b{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: $beige-medium;
+    border-radius: 100px;
+    color: $brown-dark;
+}
+
+.modal {
+    width: 100%;
+    //height: 100%;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    transition: .3s;
+    opacity: 1;
+    z-index: 5;
+}
+.modal__product__wrapper{
+    max-width: 800px;
+    width: 100%;
+    background-color: $beige-light;
+    border-radius: 40px;
+    margin: 0 auto;
+    padding: 16px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 6;
+    //transition: all 5s;
+    display: flex;
+    gap: 20px;
+    box-sizing: border-box;
+}
+@media (max-width: 900px) {
+    .modal__product__wrapper{
+        width: 656px;
+    }
+}
+@media (max-width: 710px) {
+    .modal__product__wrapper{
+        width: 310px;
+    }
+}
+
+.modal__product__img { 
+    min-width: 310px;
+    width: 310px;
+    height: 310px;
+    border-radius: 40px;
+    overflow: hidden;
+}
+.modal__product__img-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    transform: scale(1.1);
+}
+.form__wrapper { 
+}
+.form__product{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.form__product-prev{ 
+}
+.form__product-title {
+    padding-bottom: 12px;
+}
+.form__product-description {
+}
+.form__product__size, 
+.form__product__options  {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.input__radio,
+.input__checkbox{
+    position: relative;
+    padding: 8px 16px 8px 8px;
+    height: 46px;
+    border-radius: 100px;
+    border: 1px solid $brown-medium;
+}
+.form__product__size-title,
+.form__product__options-title {
+    width: 100%;
+}
+.form__product__options {
+}
+.form__product__price {
+    display: flex;
+    justify-content: space-between;
+}
+.form__product__price-title {
+}
+.form__product__price-price {
+}
+.form__product__warning {
+    font-size: 1rem;
+    line-height: 1.4rem;
+    font-weight: 600;
+    position: relative;
+    padding: 12px 0 12px 24px;
+    border-top: 1px solid $beige-medium;
+}
+.form__product__warning::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 12px;
+    width: 16px;
+    height: 16px;
+    background-image: url('../img/icons/info-empty.svg');
+}
+.form__product__submit {
+    width: 100%;
+    padding: 10px 78px;
+    line-height: 2.3rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: $brown-dark;
+    text-transform: capitalize;
+    background-color: transparent;
+    border-radius: 100px;
+    border: 1px solid $brown-medium;
+}
+.none{
+    display: none;
+}
+/* active ---------------------------------------------------*/
+.input__radio.active__input .input__radio{
+    color: $brown-dark;
+    background-color: $beige-light;
+}
+/* hover */
+.form__product__size > div:hover, 
+.form__product__options > div:hover {
+    background-color: $brown-medium;
+    & > label{
+        color: $beige-light;
+    }
+}
+.form__product__size > div:hover b, 
+.form__product__options > div:hover b{
+    color: $brown-dark;
+    background-color: $beige-light;
+}
+.form__product__size > div:active b, 
+.form__product__options > div:active b{
+    color: $brown-dark;
+    background-color: $beige-light;
+}
+.form__product__submit:hover{
+    background-color: $brown-medium;
+    color: $beige-light;
+}
+
+/* MEDIA */
+@media (max-width: 900px) {
+    .modal__product__wrapper{
+        width: 656px;
+    }
+}
+@media (max-width: 710px) {
+    .modal__product__wrapper{
+        width: 342px;
+    }
+    .modal__product__img{
+        display: none;
+    }
+    .custom-radio+label, 
+    .custom-checkbox+label{
+        font-size: 1.6rem;
+    }
+    b{
+        font-size: 1.6rem;
+    }
+}

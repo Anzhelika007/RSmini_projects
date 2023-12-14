@@ -1,0 +1,94 @@
+.menu{
+    overflow-x: hidden;
+}
+.menu__icon{
+    display: none;
+}
+@media (max-width: 768px){
+    .menu__icon {
+    display: block;
+    top: -2px;
+    right: 0;
+    z-index: 1;
+    width: 44px;
+    height: 44px;
+    margin: 3px 0;
+    border-radius: 100px;
+    border: 1px solid $brown-medium;
+    position: relative;
+    cursor: pointer;
+    box-sizing: border-box;
+    &> span {
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        width: 17px;
+        height: 2px;
+        border-radius: 100px;
+        background-color: $brown-medium;
+        transform: translate(-50%, 50%);
+        transition: all .2s;
+        
+        &:last-child{
+            top: 55%;
+            }
+        }
+    }
+    
+    .header__home-icon {
+        display: none;
+    }
+    .navigation{
+        @include font($size: 3.2rem, $height:125%, $weight: 600, $style: normal); 
+        position: fixed;
+        top: 100px;
+        padding: 60px 0;
+        right: calc(-100% - 40px);
+        height: calc(100vh - 90px);
+        width: 100%;
+        background-color: $beige-light;
+        display: flex;
+        overflow-x: auto;
+        transition: all .2s;
+        z-index: 5;
+    }
+    .navigation__list{
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        margin: auto;
+        height: fit-content;
+    }
+    .navigation.active__burger {
+        right: 0;
+    } 
+    .header__home-icon.active__burger {
+        display: block;
+        position: absolute;
+        top: 610px;
+        left: 50%;
+        z-index: 5;
+        @include font($size: 3.2rem, $height:125%, $weight: 600, $style: normal); 
+        transform: translateX(-50%);
+    }
+    .header__home-icon.active__burger .header__home-cup-svg {
+        min-width: 50px;
+        min-height: 40px;
+        margin: 0 5px 0 0px;
+        margin-bottom: -10px;
+    }
+    /* closed menu */
+    .menu__icon.active__burger {
+        &> span {
+            transform: scale(0);
+             top: calc(50%);
+             left: 30%;
+            &:first-child{
+                transform: rotate(-45deg);
+            }
+            &:last-child{
+                transform: rotate(45deg);
+            }
+        }
+    }
+}

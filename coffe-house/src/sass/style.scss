@@ -1,0 +1,23 @@
+@import 'base/normolize';
+
+// abstracts
+@import 'abstracts/variables';
+@import 'abstracts/placeholders';
+@import 'abstracts/mixins';
+
+// base
+@import 'base/fonts';
+@import 'base/body';
+
+// layout
+@import 'layout/header-home';
+@import 'layout/footer';
+// Pages
+@import 'pages/home';
+@import 'pages/menu-coffee';
+
+// Components
+@import 'components/slider';
+@import 'components/navigation';
+@import 'components/modal';
+
