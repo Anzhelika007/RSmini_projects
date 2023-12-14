@@ -1,0 +1,305 @@
+// enjoy
+.enjoy__wrapper {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
+    position: relative;
+       &>*{
+        max-width: 530px;
+        z-index: 3;
+        
+    } 
+    &::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        border-radius: 40px;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
+    } 
+}
+.enjoy__video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 40px;
+    z-index: 1;
+}
+.enjoin-title {
+    z-index: 10;
+    
+}
+.enjoy-text {
+    color: $beige-light;
+}
+.enjoy-btn {
+    font-weight: 600;
+    line-height: 64px;
+    text-align: center;
+    width: 200px;
+    max-width: 200px;
+    height: 64px;
+    font-weight: 600;
+    border-radius: 100px;
+    background-color: $beige-light;
+    border: none;
+    color: $brown-dark;
+    cursor: pointer;
+    position: relative;
+    transition: 0.6s;
+}
+.enjoy-btn::after{
+    content: url('../img/icons/coffee-cup.svg');
+    position: absolute;
+    right: 64px;
+    top: 3px;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    transition: 0.6s;
+}
+@media (hover: hover) {
+.enjoy-btn:hover{
+    transition: 0.6s;
+    padding-right: 28px;
+    }
+}
+.enjoy-btn:hover::after{
+    content: url('../img/icons/coffee-cup.svg');
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    opacity: 1;
+}
+
+// favourites
+.favourites__coffee {
+}
+.favorites__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.favourites-title {
+    text-align: center;
+}
+// about
+.about__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.about__gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 430px 120px 430px;
+    grid-auto-flow: column;
+    gap: 40px;
+}
+.about__gallery-img {
+    height: 100%;
+    width: 100%; 
+    transform: scale(1.1);
+}
+.about__gallery-item{
+    border-radius: 20px;
+    overflow: hidden;
+}
+.about__gallery-item:nth-child(1){
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.about__gallery-item:nth-child(2){
+    grid-row-start: 3;
+    grid-row-end: 4; 
+}
+.about__gallery-item:nth-child(3){
+    grid-row-start: 1;
+    grid-row-end: 2; 
+}
+.about__gallery-item:nth-child(4){
+    grid-row-start: 2;
+    grid-row-end: 4; 
+}
+.about__gallery-img{
+    transform: scale(1.1);
+    object-fit: cover;
+}
+@media (hover: hover) {
+.about__gallery-img:hover{
+    transform: scale(1);
+    transition: all 2s;
+}
+}
+// mobile
+.mobile__app__wrapper {
+    display: flex;
+    //flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    //gap: 100px;
+    &>*{
+        flex-basis: 630px;
+    }
+}
+.mobile__app__info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.mobile__app__info-title {
+}
+.mobile__app__info-text {
+}
+.mobile__app__info__block {
+}
+.mobile__app__img{
+    flex-shrink: 10;
+    width: 45%;
+}
+.block {
+    display: flex;
+    gap: 20px;
+}
+.block__btn {
+    display: flex;
+    width: 200px;
+    height: 64px;
+    padding: 12px 20px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 100px;
+    border: 1px solid $brown-medium; 
+}
+.block__btn-icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.block__btn:nth-child(1)> span{
+    background-image: url('../img/icons/button-app-store.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+@media (hover: hover) {
+.block__btn:nth-child(1):hover> span{
+    background-image: url('../img/icons/button-app-store-hover.svg');
+    transition: all 0.3s;
+}}
+.block__btn:nth-child(2)> span{
+    background-image: url('../img/icons/button-google-play.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+@media (hover: hover) {
+    .block__btn:nth-child(2):hover> span{
+        background-image: url('../img/icons/button-google-play-hover.svg');
+        transition: all 0.3s;
+    }
+    .block__btn:hover {
+        background-color: $brown-medium;
+        color: $beige-light;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+}
+.block__btn-text {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 140%; 
+}
+.block__btn-title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    width:100%;
+}
+
+@media (max-width: 1439px){
+    .enjoy__wrapper {
+        padding: 100px 60px;
+        &>*{
+            width: 100%;
+        }
+    }
+    .enjoin-btn{
+        padding-right: 28px;
+    }
+    .enjoin-btn::after{
+        opacity: 1;
+    }
+}
+@media (max-width: 1000px) {
+    .mobile__app__wrapper {
+        flex-direction: column;
+        width: 100%;
+        gap: 100px;
+        &>*{
+            flex-basis: auto;
+        }
+    } 
+    .mobile__app__img{
+        width: 95%;
+        max-width:630px;
+    }      
+}
+
+@media (max-width: 900px) {
+    .about__gallery {
+       display: flex;
+       flex-direction: column;
+       gap: 40px;
+    }
+    .about__gallery-item {
+        display: grid;
+        max-height: 1220px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 590px;
+    }    
+    .about__gallery-item:nth-child(2), 
+    .about__gallery-item:nth-child(3){
+        display: none; 
+    }   
+    .about__gallery-img {
+        transform: scale(1.05);
+    }    
+}
+
+@media (max-width: 700px) {
+    .enjoy__wrapper {
+        padding: 60px 16px;
+        &>*{
+            width: 100%;
+        }
+    }
+    .block{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 520px) {
+    .about__gallery-img {
+        height: 100%;
+        width: 100%; 
+        transform: scale(1.24);
+    }
+    .mobile__app__wrapper {
+        gap: 40px; 
+    } 
+    .mobile__app__img{
+        width: 100%;
+        height: auto;
+    } 
+}

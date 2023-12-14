@@ -1,0 +1,164 @@
+.menu__coffee {
+}
+.menu__coffee-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+}
+.menu__coffee-title {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    font-size: 6rem;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 125%;
+    color: $brown-dark;
+}
+.menu__coffee__block {
+    display: flex;
+    gap: 16px;
+}
+.menu__coffee__block-btn {
+    height: 46px;
+    border-radius: 100px;
+    border: 1px solid $beige-medium;
+    padding: 8px 16px 8px 46px;
+    display: flex;
+    gap: 8px;   
+    font-weight: 600;
+    line-height: 30px;
+    cursor: pointer;
+    position: relative;
+}
+.menu__coffee__block-btn::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    background-color: $beige-medium;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#coffee::before{
+    background-image: url('../img/icons/icon-tabs-1.svg');
+}
+#tea::before{
+    background-image: url('../img/icons/icon-tabs-2.svg');
+}
+#dessert::before{
+    background-image: url('../img/icons/icon-tabs-3.svg');
+}
+.menu-icon.coffee, 
+.menu-icon.tea,
+.menu-icon.dessert{
+    background-repeat: no-repeat;
+    background-size: 16px 24px;
+    background-position: center;
+}
+
+.menu__coffee__gallery {
+   
+}
+.gallery { 
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 39px;
+    height: 1360px;
+    overflow-y: hidden;
+    box-sizing: border-box;
+    @media(max-width: 691px){
+        height: 2144px; 
+    }
+}
+.gallery__card {
+    border-radius: 40px;
+    border: 1px solid $beige-medium;
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+    height: 506px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.gallery__card-wrapper{
+    border-radius: 40px;
+    width: 310px;
+    overflow: hidden;
+}
+.gallery__card-img {
+    border-radius: 40px;
+    width: 310px;
+    transform: scale(1.1);
+}
+.gallery__card-title {
+    padding: 20px 20px 12px;
+}
+.gallery__card-text {
+    padding: 0 20px 0 20px;
+}
+.gallery__card-price {
+    padding: 0 20px 20px 20px;
+    margin-top:auto;
+}
+// Hover
+@media (hover: hover) { 
+    .gallery__card:hover .gallery__card-img{
+        transition: all 1s;
+        transform: scale(1);
+    }
+    .menu__coffee__block-btn:hover{
+        background-color: $brown-medium;
+        color:$beige-light;
+        transition: all 0.3s;
+    }
+    .menu__coffee__block-btn:hover::before {
+        background-color:$beige-light;
+        transition: all 0.3s;
+    }
+}
+// active
+.menu__coffee__block-btn.active__tag{
+    background-color: $brown-medium;
+    color:$beige-light;
+    cursor: auto;
+}
+/* why this is works ????  */
+.menu__coffee__block-btn.active__tag::before{
+    background-color:$beige-light;
+}
+.menu__coffee__gallery-refresh{
+    display: none;
+}
+@media (max-width: 780px){
+    .menu__coffee__gallery-refresh{
+        display: block;
+        width: 60px;
+        height: 60px;
+    }
+    .menu__coffee__gallery-refresh use{
+        display: block;
+        width: 60px;
+        height: 60px;
+        stroke: $brown-medium;
+    }
+}
+@media (max-width: 640px){
+    .menu__coffee-title {
+        width: 100%;
+        font-size: 3.2rem;
+    }
+}
+@media (max-width: 450px){
+   .menu__coffee__block{
+    gap: 8px;
+   }
+}
+

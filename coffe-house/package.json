@@ -1,0 +1,16 @@
+{
+  "name": "coffee-house",
+  "version": "1.0.0",
+  "description": "coffee shop website training project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "style": "sass --watch src/sass/style.scss src/sass/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "anzhelika007-JSFE2023Q4"
+  },
+  "author": "Anzhalika Turlak",
+  "license": "ISC"
+}

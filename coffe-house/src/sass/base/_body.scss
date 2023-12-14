@@ -1,0 +1,66 @@
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+    background-color: $beige-light;
+  }
+body {
+  @extend %font-base;
+  @include font($size: 1.6rem, $height: 150%, $weight: 400);
+  color: $brown-dark;
+  background-color: $beige-light;
+  box-sizing: border-box;
+}
+.lock{
+  overflow: hidden;
+}
+em{
+  @extend %font-primary;
+  color: $brown-accent;
+  font-style: italic;
+}
+section{
+  margin-bottom: 100px;
+}
+h1, h2, h3, button, a, li{
+  @extend %font-base;
+   color: $brown-dark;
+}
+h1{
+  @include font($size: 7.2rem, $height: 105%, $weight: 600, $style: normal);
+  color: $beige-light;
+}
+h2{
+  @include font($size: 6.0rem, $height:125%, $weight: 600, $style: normal); 
+}
+h3{
+  @include font($size: 2.4rem, $height: 125%, $weight: 600, $style: normal);
+}  
+
+.container{
+  max-width: $width-desctop;
+  padding: 0 40px;
+  margin:0 auto;
+  box-sizing: border-box;
+  @media (max-width: 770px){
+    max-width: $width-tablet;
+  }
+  @media (max-width: 400px){
+    max-width: $width-mobile;
+  }
+}
+
+@media (max-width: 700px) {
+    body {
+    @include font($size: 1.6rem, $height: 150%, $weight: 400);
+    }
+    h1{
+      @include font($size: 4.2rem, $height: 115%, $weight: 600, $style: normal);
+      color: $beige-light;
+    }
+    h2{
+      @include font($size: 3.2rem, $height:125%, $weight: 600, $style: normal); 
+    } 
+  .container{
+    padding: 0 16px;
+  } 
+}
