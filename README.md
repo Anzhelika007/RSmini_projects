@@ -1,2 +1,2 @@
 # RSmini_projects
-1.  [Coffe House](https://RSmini_projects.github.io/coffe-house/)
+1.  [Coffe House](https://anzhelika007.github.io/RSmini_projects/coffe-house/)
