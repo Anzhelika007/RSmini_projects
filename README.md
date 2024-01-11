@@ -1,5 +1,9 @@
 ### RSmini_projects
 
+### Hangman
+
+#### ESLint
+
 1. Install npm  
    `npm init -y`
 2. Install ESLint  
@@ -18,3 +22,10 @@
 4. Add file .eslintrc and create dependance to airbnb ({"extends": ["airbnb/base"]})
 5. Add file .eslintignore
 6. Add commands scripts for start eslint in package.json
+7. Add config rulles for eslint
+
+#### Husky
+
+8. Install Husky (can read about git hooks [there](https://githooks.com/))
+   `npm i --save-dev husky lint-staged`
+9. Add info about devDependencies to husky and lint-staget in package.json
