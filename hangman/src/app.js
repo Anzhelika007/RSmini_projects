@@ -7,5 +7,7 @@ const obj = {
 var gg = 83;
 gg++;
 
+console.log(gg)
+
 console.log(x, obj);
 console.log(window);
