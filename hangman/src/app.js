@@ -4,8 +4,8 @@ const obj = {
 	x: 2,
 	Y: 1,
 };
-var gg = 83;
-gg++;
+var gg = 83
+gg++
 
 console.log(gg)
 
