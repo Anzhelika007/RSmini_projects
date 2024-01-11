@@ -4,10 +4,10 @@ const obj = {
 	x: 2,
 	Y: 1,
 };
-var gg = 83
-gg++
+let gg = 83;
+gg++;
 
-console.log(gg)
+console.log(gg);
 
 console.log(x, obj);
 console.log(window);
